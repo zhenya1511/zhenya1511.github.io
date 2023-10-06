@@ -47,7 +47,7 @@ function makeSpellList() {
 function makeSpellItem(item) {
     return `
     <div id="${item.mnemonicCode}" class="spell-item border p-2 m-3">
-            <h2 class="text-center">${item['name']['rus']}  <nobr>[${item['name']['eng']}]</nobr></h2>
+            <h2 class="text-center">${item['name']['rus']}  <div>[${item['name']['eng']}]</div></h2>
 
             <div class="text-secondary mb-2">
                 ${item['level'] ? item['level'] + ' ур' : 'заговор'} , ${item['school']}

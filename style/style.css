@@ -14,7 +14,6 @@
     #spellTable {
         display: grid;
         grid-auto-columns: 1fr;
-        grid-auto-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 0px 0px;
     }
@@ -22,5 +21,6 @@
     .spell-item {
         margin: 0 !important;
         font-size: .8rem;
+        width: 100%;
     }
 }
