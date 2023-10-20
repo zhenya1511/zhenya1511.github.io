@@ -30,15 +30,19 @@ function makeSpellList() {
     const mainMenu = document.getElementById('mainMenu');
     const spellTable = document.getElementById('spellTable');
 
-    SPELL_LIST[playerCode].forEach(spell => {
+    SPELL_LIST[playerCode].sort((a, b) => {
+        return a.level === b.level ? 0 : (a.level > b.level ? 1 : -1);
+    }).forEach(spell => {
         mainMenu.innerHTML = mainMenu.innerHTML + `
         <li class="nav-item">
-            <a class="nav-link" href="#${spell.mnemonicCode}">${spell.name.rus} [${spell.name.eng}]</a>
+            <a class="nav-link" href="#${spell.mnemonicCode}">[${spell.level ? spell.level + 'ур' : 'заг'}] ${spell.name.rus} [${spell.name.eng}]</a>
         </li>
         `;
-    })   ;
+    });
 
-    SPELL_LIST[playerCode].forEach(spell => {
+    SPELL_LIST[playerCode].sort((a, b) => {
+        return a.level === b.level ? 0 : (a.level > b.level ? 1 : -1);
+    }).forEach(spell => {
         spellTable.innerHTML = spellTable.innerHTML + makeSpellItem(spell);
     })
 }
