@@ -7,4 +7,8 @@ const players = [
         "name": "Нура",
         "code": "nura"
     },
+    {
+        "name": "Тоутант",
+        "code": "tautant"
+    },
 ]

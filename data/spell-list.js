@@ -1602,5 +1602,462 @@ const SPELL_LIST = {
       "description": "<p>Яркий луч вылетает из вашего указательного пальца в точку, выбранную вами в пределах дистанции, где и происходит взрыв пламени с гулким рёвом.</p><p>Все существа в пределах сферы с радиусом 20 футов с центром в этой точке должны совершить спасбросок <span class=\"saving_throw\">Ловкости</span>.</p><p>Цель получает урон огнём <dice-roller formula=\"8к6\">8к6</dice-roller> при провале или половину этого урона при успехе. Этот огонь огибает углы. Он воспламеняет горючие предметы, которые никто не несёт и не носит.</p>",
       "upper": "Если вы накладываете это заклинание, используя ячейку 4 уровня или выше, урон увеличивается на <dice-roller formula=\"1к6\">1к6</dice-roller> за каждый уровень ячейки выше третьего."
     }
+  ],
+  "tautant": [
+    {
+      "name": {
+        "rus": "Волшебная рука",
+        "eng": "Mage Hand"
+      },
+      "level": 0,
+      "school": "вызов",
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "url": "/spells/mage_hand",
+      "source": {
+        "shortName": "PHB",
+        "name": "Книга игрока",
+        "page": 216
+      },
+      "id": 38,
+      "range": "30 футов",
+      "duration": "1 минута",
+      "time": "1 действие",
+      "classes": [
+        {
+          "name": "Бард",
+          "url": "/classes/bard",
+          "icon": "class/bard"
+        },
+        {
+          "name": "Волшебник",
+          "url": "/classes/wizard",
+          "icon": "class/wizard"
+        },
+        {
+          "name": "Колдун",
+          "url": "/classes/warlock",
+          "icon": "class/warlock"
+        },
+        {
+          "name": "Чародей",
+          "url": "/classes/sorcerer",
+          "icon": "class/sorcerer"
+        },
+        {
+          "name": "Изобретатель",
+          "url": "/classes/artificer",
+          "icon": "class/artificer"
+        }
+      ],
+      "races": [
+        {
+          "name": "Гитъянки",
+          "url": "/races/githyanki"
+        },
+        {
+          "name": "Гитцераи",
+          "url": "/races/githzerai"
+        },
+        {
+          "name": "Тифлинг (маммон)",
+          "url": "/races/mammon"
+        },
+        {
+          "name": "Тифлинг (мефистофель)",
+          "url": "/races/mephistopheles"
+        }
+      ],
+      "description": "<p>В точке, выбранной вами в пределах дистанции, появляется призрачная парящая рука. Рука существует, пока заклинание активно, или пока вы не отпустите её <em>Действием</em>. Рука исчезает, если окажется более чем в 30 футах от вас, или если вы повторно используете это заклинание.</p><p>Вы можете <em>Действием</em> контролировать руку. Вы можете с её помощью манипулировать предметами, открывать незапертые двери и контейнеры, убирать предметы в открытые контейнеры и доставать их оттуда, или выливать содержимое флаконов.</p><p>При каждом использовании руки вы можете переместить её на 30 футов. Рука не может совершать атаки, активировать магические предметы и переносить более 10 фунтов.</p>"
+    },
+    {
+      "name": {
+        "rus": "Починка",
+        "eng": "Mending"
+      },
+      "level": 0,
+      "school": "преобразование",
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "два магнетита"
+      },
+      "url": "/spells/mending",
+      "source": {
+        "shortName": "PHB",
+        "name": "Книга игрока"
+      },
+      "id": 244,
+      "range": "Касание",
+      "duration": "Мгновенная",
+      "time": "1 минута",
+      "classes": [
+        {
+          "name": "Бард",
+          "url": "/classes/bard",
+          "icon": "class/bard"
+        },
+        {
+          "name": "Волшебник",
+          "url": "/classes/wizard",
+          "icon": "class/wizard"
+        },
+        {
+          "name": "Друид",
+          "url": "/classes/druid",
+          "icon": "class/druid"
+        },
+        {
+          "name": "Жрец",
+          "url": "/classes/cleric",
+          "icon": "class/cleric"
+        },
+        {
+          "name": "Чародей",
+          "url": "/classes/sorcerer",
+          "icon": "class/sorcerer"
+        },
+        {
+          "name": "Изобретатель",
+          "url": "/classes/artificer",
+          "icon": "class/artificer"
+        }
+      ],
+      "description": "<p>Это заклинание чинит одно повреждение или разрыв на предмете, которого касаетесь, например, разорванное звено цепи, две половинки сломанного ключа, порванный плащ или протекающий бурдюк.</p><p>Если повреждение или разрыв не больше 1 фута в длину, вы чините его, не оставляя следов. Это заклинание может физически починить магический предмет или конструкта, но не может восстановить магию в таких предметах.</p>"
+    },
+    {
+      "name": {
+        "rus": "Очарование личности",
+        "eng": "Charm Person"
+      },
+      "level": 1,
+      "school": "очарование",
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "url": "/spells/charm_person",
+      "source": {
+        "shortName": "PHB",
+        "name": "Книга игрока"
+      },
+      "id": 207,
+      "range": "30 футов",
+      "duration": "1 час",
+      "time": "1 действие",
+      "classes": [
+        {
+          "name": "Бард",
+          "url": "/classes/bard",
+          "icon": "class/bard"
+        },
+        {
+          "name": "Волшебник",
+          "url": "/classes/wizard",
+          "icon": "class/wizard"
+        },
+        {
+          "name": "Друид",
+          "url": "/classes/druid",
+          "icon": "class/druid"
+        },
+        {
+          "name": "Колдун",
+          "url": "/classes/warlock",
+          "icon": "class/warlock"
+        },
+        {
+          "name": "Чародей",
+          "url": "/classes/sorcerer",
+          "icon": "class/sorcerer"
+        }
+      ],
+      "subclasses": [
+        {
+          "name": "Домен Обмана",
+          "url": "/classes/cleric/trickery",
+          "class": "Жрец"
+        },
+        {
+          "name": "Фейский Странник",
+          "url": "/classes/ranger/fey_wanderer",
+          "class": "Следопыт"
+        },
+        {
+          "name": "Скаут Зобека",
+          "url": "/classes/ranger/zobecker_scout",
+          "class": "Следопыт"
+        }
+      ],
+      "races": [
+        {
+          "name": "Тифлинг (фьёрна)",
+          "url": "/races/fierna"
+        },
+        {
+          "name": "Тифлинг (язык дьявола)",
+          "url": "/races/variant_devils_tongue"
+        }
+      ],
+      "description": "<p>Вы пытаетесь очаровать гуманоида, которого видите в пределах дистанции. Он должен совершить спасбросок <span class=\"saving_throw\">Мудрости</span>, с <span class=\"advantage\">преимуществом</span>, если вы или ваши спутники сражаетесь с ним.</p><p>Если он проваливает спасбросок, он <detail-tooltip type=\"screen\"><a href=\"/screens/Charmed\">очарован</a></detail-tooltip> вами, пока заклинание активно или пока вы или ваши спутники не причините ему вред. <detail-tooltip type=\"screen\"><a href=\"/screens/Charmed\">Очарованное</a></detail-tooltip> существо считает вас своим другом.</p><p>Когда заклинание оканчивается, существо знает, что было очаровано вами.</p>",
+      "upper": "Если вы накладываете это заклинание, используя ячейку 2 уровня или выше, вы можете сделать целью одно дополнительное существо за каждый уровень ячейки выше первого. Эти существа должны находиться в пределах 30 футов друг от друга, чтобы вы могли на них нацелиться."
+    },
+    {
+      "name": {
+        "rus": "Дар Локи",
+        "eng": "Loki's Gift"
+      },
+      "level": 1,
+      "school": "очарование",
+      "additionalType": "Рунная магия",
+      "components": {
+        "v": true
+      },
+      "url": "/spells/loki's_gift",
+      "source": {
+        "shortName": "MHH",
+        "name": "Мидгард Справочник героя",
+        "homebrew": true
+      },
+      "id": 536,
+      "range": "На себя",
+      "duration": "1 минута",
+      "time": "1 действие",
+      "classes": [
+        {
+          "name": "Бард",
+          "url": "/classes/bard",
+          "icon": "class/bard"
+        },
+        {
+          "name": "Жрец",
+          "url": "/classes/cleric",
+          "icon": "class/cleric"
+        }
+      ],
+      "description": "<p>Дар Локи заставляет даже самую наглую ложь выглядеть на удивление правдоподобной: вы совершаете с <span class=\"advantage\">преимуществом</span> проверки <em>Обмана (Харизма)</em>, о чём бы вы ни рассказывали. Если ваша проверка завершается неудачей, существо понимает, что вы пытались манипулировать им с применением магии. Если вы врёте существу, которое настроено дружелюбно по отношению к вам, и оно проваливает спасбросок <span class=\"saving_throw\">Харизмы</span>, вы также можете уговорить его раскрыть потенциально постыдную тайну. Тайна может быть проступком (прелюбодеяние, жульничество в игре, тайная фобия и тому подобное), но не может быть чем-то угрожающим жизни и здоровью или настолько бесчестным, чтобы привести существо к репутации гнусного злодея. Вербальным компонентом заклинания является ложь, которую вы произносите.</p>"
+    },
+    {
+      "name": {
+        "rus": "Лечение ран",
+        "eng": "Cure Wounds"
+      },
+      "level": 1,
+      "school": "воплощение",
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "url": "/spells/cure_wounds",
+      "source": {
+        "shortName": "PHB",
+        "name": "Книга игрока",
+        "page": 236
+      },
+      "id": 130,
+      "range": "Касание",
+      "duration": "Мгновенная",
+      "time": "1 действие",
+      "classes": [
+        {
+          "name": "Бард",
+          "url": "/classes/bard",
+          "icon": "class/bard"
+        },
+        {
+          "name": "Друид",
+          "url": "/classes/druid",
+          "icon": "class/druid"
+        },
+        {
+          "name": "Жрец",
+          "url": "/classes/cleric",
+          "icon": "class/cleric"
+        },
+        {
+          "name": "Паладин",
+          "url": "/classes/paladin",
+          "icon": "class/paladin"
+        },
+        {
+          "name": "Следопыт",
+          "url": "/classes/ranger",
+          "icon": "class/ranger"
+        },
+        {
+          "name": "Изобретатель",
+          "url": "/classes/artificer",
+          "icon": "class/artificer"
+        },
+        {
+          "name": "Шаман",
+          "url": "/classes/shaman",
+          "icon": "class/shaman"
+        }
+      ],
+      "subclasses": [
+        {
+          "name": "Домен Жизни",
+          "url": "/classes/cleric/life",
+          "class": "Жрец"
+        },
+        {
+          "name": "Небожитель",
+          "url": "/classes/warlock/celestial",
+          "class": "Колдун"
+        },
+        {
+          "name": "Круг Дикого Огня",
+          "url": "/classes/druid/wildfire",
+          "class": "Друид"
+        }
+      ],
+      "description": "<p>Существо, которого вы касаетесь, восстанавливает количество хитов, равное <dice-roller formula=\"1к8\">1к8</dice-roller> + ваш модификатор базовой характеристики.</p><p>Это заклинание не оказывает никакого эффекта на нежить и конструктов.</p>",
+      "upper": "Если вы накладываете это заклинание, используя ячейку 2 уровня или выше, лечение увеличивается на <dice-roller formula=\"1к8\">1к8</dice-roller> за каждый уровень ячейки выше первого."
+    },
+    {
+      "name": {
+        "rus": "Вопрос с подвохом",
+        "eng": "Trick Question"
+      },
+      "level": 1,
+      "school": "очарование",
+      "additionalType": "Магия иероглифов",
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "url": "/spells/trick_question",
+      "source": {
+        "shortName": "MHH",
+        "name": "Мидгард Справочник героя",
+        "homebrew": true
+      },
+      "id": 519,
+      "range": "30 футов",
+      "duration": "Мгновенная",
+      "time": "1 действие",
+      "classes": [
+        {
+          "name": "Бард",
+          "url": "/classes/bard",
+          "icon": "class/bard"
+        },
+        {
+          "name": "Волшебник",
+          "url": "/classes/wizard",
+          "icon": "class/wizard"
+        },
+        {
+          "name": "Друид",
+          "url": "/classes/druid",
+          "icon": "class/druid"
+        }
+      ],
+      "description": "<p>Вы формулируете вопрос таким образом, что на него можно ответить одним словом и задаёте его цели. Она должна совершить успешный спасбросок <span class=\"saving_throw\">Мудрости</span>, или вынуждена ответить на ваш вопрос. После того, как заклинание закончится, цель осознаёт, что для ответа вы использовали на ней магию.</p>"
+    },
+    {
+      "name": {
+        "rus": "Бешеный снаряд",
+        "eng": "Frenzied Bolt"
+      },
+      "level": 2,
+      "school": "вызов",
+      "additionalType": "Магия хаоса",
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "url": "/spells/frenzied_bolt",
+      "source": {
+        "shortName": "MHH",
+        "name": "Мидгард Справочник героя",
+        "homebrew": true
+      },
+      "id": 501,
+      "range": "120 футов",
+      "duration": "Мгновенная",
+      "time": "1 действие",
+      "classes": [
+        {
+          "name": "Бард",
+          "url": "/classes/bard",
+          "icon": "class/bard"
+        },
+        {
+          "name": "Волшебник",
+          "url": "/classes/wizard",
+          "icon": "class/wizard"
+        }
+      ],
+      "description": "<p>Вы направляете радужный снаряд в выбранное существо в пределах дистанции.</p><p>При попадании цель получает <dice-roller formula=\"3к8\">3к8</dice-roller> урона, случайного типа (определяется броском по таблице &laquo;Тип урона&raquo; - см. Изощренная магия).</p><p>Если результатом вашего броска атаки было нечётное число (самого броска, без применения бонусов и модификаторов), снаряд отскакивает в новую цель в пределах дистанции, в которую этот снаряд ещё не попадал, что требует нового броска атаки заклинанием для попадания. Снаряд продолжает отскакивать в новые цели, пока вы не выбросите чётное число при броске атаки заклинанием, не промахнетесь или у вас не кончатся потенциальные цели. Все цели должны быть в пределах дистанции от вас. Вы и ваши союзники также считаетесь возможными целями этого заклинания, если уж так повезет - или не повезет.</p><p style=\"text-align: center;\"><strong>Тип урона</strong></p><div claass=\"table-responsive\"><table class=\"dnd5_table\"><thead><tr style=\"height: 18px;\"><th style=\"width: 29.3125px; height: 18px;\">к10</th><th style=\"width: 562.297px; text-align: left; height: 18px;\">Тип урона</th></tr></thead><tbody><tr style=\"height: 18px;\"><td style=\"width: 29.3125px; text-align: center; height: 18px;\">1</td><td style=\"width: 562.297px; height: 18px;\">кислота</td></tr><tr style=\"height: 18px;\"><td style=\"width: 29.3125px; text-align: center; height: 18px;\">2</td><td style=\"width: 562.297px; height: 18px;\">холод</td></tr><tr style=\"height: 18px;\"><td style=\"width: 29.3125px; text-align: center; height: 18px;\">3</td><td style=\"width: 562.297px; height: 18px;\">огонь</td></tr><tr style=\"height: 18px;\"><td style=\"width: 29.3125px; text-align: center; height: 18px;\">4</td><td style=\"width: 562.297px; height: 18px;\">силовое поле</td></tr><tr style=\"height: 18px;\"><td style=\"width: 29.3125px; text-align: center; height: 18px;\">5</td><td style=\"width: 562.297px; height: 18px;\">молния</td></tr><tr style=\"height: 18px;\"><td style=\"width: 29.3125px; text-align: center; height: 18px;\">6</td><td style=\"width: 562.297px; height: 18px;\">некротическая энергия</td></tr><tr style=\"height: 18px;\"><td style=\"width: 29.3125px; text-align: center; height: 18px;\">7</td><td style=\"width: 562.297px; height: 18px;\">яд</td></tr><tr style=\"height: 18px;\"><td style=\"width: 29.3125px; text-align: center; height: 18px;\">8</td><td style=\"width: 562.297px; height: 18px;\">психическая энергия</td></tr><tr style=\"height: 18px;\"><td style=\"width: 29.3125px; text-align: center; height: 18px;\">9</td><td style=\"width: 562.297px; height: 18px;\">излучение</td></tr><tr style=\"height: 18px;\"><td style=\"width: 29.3125px; text-align: center; height: 18px;\">10</td><td style=\"width: 562.297px; height: 18px;\">звук</td></tr></tbody></table></div><p><em>Таблица типов урона взята из книги Углубленная магия (так как в мидгарде ее забыли добавить)</em></p>",
+      "upper": "Когда вы накладываете это заклинание, используя ячейку 3 уровня или выше, вы создаете дополнительный снаряд за каждый уровень ячейки выше второго. Каждое существо может быть поражено не более одного раза на одно накладывание заклинание, а не на один снаряд."
+    },
+    {
+      "name": {
+        "rus": "Корона безумия",
+        "eng": "Crown of Madness"
+      },
+      "level": 2,
+      "school": "очарование",
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "concentration": true,
+      "url": "/spells/crown_of_madness",
+      "source": {
+        "shortName": "PHB",
+        "name": "Книга игрока",
+        "page": 234
+      },
+      "id": 119,
+      "range": "120 футов",
+      "duration": "Концентрация, вплоть до 1 минуты",
+      "time": "1 действие",
+      "classes": [
+        {
+          "name": "Бард",
+          "url": "/classes/bard",
+          "icon": "class/bard"
+        },
+        {
+          "name": "Волшебник",
+          "url": "/classes/wizard",
+          "icon": "class/wizard"
+        },
+        {
+          "name": "Колдун",
+          "url": "/classes/warlock",
+          "icon": "class/warlock"
+        },
+        {
+          "name": "Чародей",
+          "url": "/classes/sorcerer",
+          "icon": "class/sorcerer"
+        }
+      ],
+      "subclasses": [
+        {
+          "name": "Клятвопреступник",
+          "url": "/classes/paladin/oathbreaker",
+          "class": "Паладин"
+        },
+        {
+          "name": "Домен Луны",
+          "url": "/classes/cleric/moon_mhh",
+          "class": "Жрец"
+        }
+      ],
+      "races": [
+        {
+          "name": "Тифлинг (вельзевул)",
+          "url": "/races/baalzebul"
+        }
+      ],
+      "description": "<p>Один гуманоид на ваш выбор, видимый вами в пределах дистанции должен преуспеть в спасброске <span class=\"saving_throw\">Мудрости</span>, иначе он станет <detail-tooltip type=\"screen\"><a href=\"/screens/Charmed\">очарованным</a></detail-tooltip> вами на время действия заклинания.</p><p>Пока цель <detail-tooltip type=\"screen\"><a href=\"/screens/Charmed\">очарована</a></detail-tooltip> таким способом, на её голове появляется изогнутая железная корона, а в глазах светится безумие. <detail-tooltip type=\"screen\"><a href=\"/screens/Charmed\">Очарованная</a></detail-tooltip> цель должна в каждый свой ход перед перемещением совершать <em>Действием</em> <em>рукопашную атаку</em> по любому существу кроме себя, которое вы мысленно выбираете.</p><p>Цель может действовать в свой ход как обычно, если вы не выбрали существо или в пределах его досягаемости нет других существ.</p><p>В последующие ходы вы должны <em>Действием</em> поддерживать контроль над целью, иначе заклинание оканчивается.</p><p>Кроме того, цель в конце каждого своего хода может совершать спасброски <span class=\"saving_throw\">Мудрости</span>. В случае успеха заклинание оканчивается.</p>"
+    },
   ]
 }
